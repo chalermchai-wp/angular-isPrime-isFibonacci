@@ -1,0 +1,25 @@
+p {
+  font-family: Lato;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 200px auto 300px;
+}
+.container > .input-number {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.container > .calculate {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.container > .is-prime-fibonacci {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+@media (max-width: 600px) {
+  body {
+    overflow-x: auto;
+  }
+}
